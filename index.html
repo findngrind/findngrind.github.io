@@ -1,34 +1,31 @@
-<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet"><style>
-  body {
-    margin: 0;
-    height: 100vh;
-    font-family: 'Source Sans Pro', sans-serif;
-  }
-  .title {
-    position: fixed;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 56px;
-    background: #6060609c;
-    color: #eeeeee;
-    padding: 12px;
-    border-radius: 8px;
-  }
-  a {
-    position: fixed;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .image {
-    background: url("https://images.unsplash.com/photo-1502156473420-13f1315e9be4?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format");
-    background-position: 55% 90%;
-    width: 100vw;
-    height: 100vh;
-  }
-</style>
-<script>console.log(document.body.scrollHeight);window.scrollTo(0, document.body.scrollHeight);</script>
-<div class="title">Find n Grind</div>
-<a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@jtylernix?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Tyler Nix"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Tyler Nix</span></a>
-<div class="image"></div>
+---
+title:
+call_to_action: Contact
+background_image_path:
+large_header: true
+testimonials:
+  - message: We use Justice Law in all our endeavours. They offer an unparalleled service when it comes to running a business.
+    image: "//placekitten.com/60/60?a=.png"
+    name: Joice Carmold
+  - message: Justice Law are the best of the best. Being local, they care about people and have strong ties to the community.
+    image: "//fillmurray.com/60/60?a=.png"
+    name: Peter Rottenburg
+  - message: Justice Law were everything we could have hoped for when buying our first home. Highly recommended to all.
+    image: "//placebear.com/60/60?a=.png"
+    name: D. and G. Gibbleston
+---
+
+<div class="editable">
+	<p>This is the <strong>Justice</strong> template from <a href="http://cloudcannon.com/">CloudCannon</a>. Justice is strong foundation for the web presence of a law firm or business. It's filled with fictitious example content to get you started.</p>
+
+	<p>Justice Law is professional representation. Practicing for over 50 years, our team have the knowledge and skills to get you results.</p>
+</div>
+
+<div class="testimonials">
+	{% for testimonial in page.testimonials %}
+		<blockquote class="testimonial">
+			<p class="testimonial-message">{{ testimonial.message }}</p>
+			<p class="testimonial-author"><img src="{% include relative-src.html src=testimonial.image %}" alt="Photo of {{ testimonial.name }}"> {{ testimonial.name }}</p>
+		</blockquote>
+	{% endfor %}
+</div>
