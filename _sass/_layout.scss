@@ -19,7 +19,7 @@ body {
 header {
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: calc(50% - 40px) 175px;
+	background-position: 50% 50%;
 	height: 420px;
 	box-sizing: border-box;
 
@@ -27,13 +27,21 @@ header {
 		text-align: center;
 	}
 
+	@media (max-width: $mobile-break) {
+		.container {
+			background: #ffffff7d;
+			border-radius: 8px;
+			padding-bottom: 8px;
+		}
+	}
+
 	@media (min-width: $mobile-break) {
 		background-size: contain;
-		background-position: calc(50% - 300px) calc(100% + 20px);
+		background-position: calc(50% - 300px) 100%;
 
 		&.main-hero {
 			height: 80vh;
-			background-position: calc(50% - 350px) calc(100% + 20px);
+			background-position: calc(50% - 350px) 100%;
 		}
 
 		.container {

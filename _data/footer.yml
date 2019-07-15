@@ -4,27 +4,27 @@
       link: /
     - name: About
       link: /about/
-    - name: Services
-      link: /services/
+      #- name: Services
+      #link: /services/
     - name: Contact
       link: /contact/
-    - name: Advice
-      link: /advice/
+      #- name: Advice
+      #link: /advice/
 - title: Social
   links:
     - name: Facebook
-      link: http://facebook.com/cloudcannon/
+      link: https://www.facebook.com/findngrind
       social_icon: Facebook
       new_window: true
     - name: Twitter
-      link: http://twitter.com/cloudcannon
+      link: https://twitter.com/findngrind
       social_icon: Twitter
       new_window: true
     - name: Instagram
-      link: http://instagram.com/
+      link: http://instagram.com/_findngrind
       social_icon: Instagram
       new_window: true
-    - name: LinkedIn
-      link: https://nz.linkedin.com/company/cloud-cannon/
-      social_icon: LinkedIn
-      new_window: true
+      #- name: LinkedIn
+      #link: https://nz.linkedin.com/company/cloud-cannon/
+      #social_icon: LinkedIn
+      #new_window: true

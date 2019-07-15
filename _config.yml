@@ -1,8 +1,8 @@
 # ----
 # Site
 
-title: Justice Template
-url: "https://orchid-heron.cloudvent.net"
+title: FnG
+url: "https://findngrind.com"
 baseurl: 
 google_analytics_key:
 google_maps_javascript_api_key:
@@ -23,7 +23,7 @@ social:
 # -----
 # Build
 
-timezone: Etc/UTC
+timezone: Asia/Kolkata
 
 paginate: 10
 paginate_path: "/advice/:num/"
@@ -37,8 +37,8 @@ defaults:
       path: ""
     values:
       layout: page
-      background_image_path: /uploads/building.jpg
-      image: /uploads/building.jpg
+      background_image_path: /uploads/background.jpg
+      image: /uploads/background.jpg
   -
     scope:
       path: ""
